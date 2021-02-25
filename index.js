@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const { PactConverter } = require('./PactConverter');
-const { WireMockStubWriter } = require('./WireMockStubWriter');
+const { PactConverter } = require('./src/PactConverter');
+const { WireMockStubWriter } = require('./src/WireMockStubWriter');
 
 program
   .option('-p, --pathToPact <pathToPact>', 'The path to the pact file')

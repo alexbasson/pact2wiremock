@@ -6,9 +6,19 @@ const PactInteractionConverter = () => {
     return request.method.toUpperCase() + '_' + path.replace('/', '').replace(/\//i, '-');
   };
 
+  const transformHeaders = (headers) => {
+    const keys = Object.keys(headers);
+    const result = {};
+    keys.forEach((key) => {
+      result[key] = {equalTo: headers[key]}
+    });
+    return result;
+  }
+
   const toWireMockRequest = (request) => ({
     method: request.method.toUpperCase(),
-    url: request.path
+    url: request.path,
+    headers: transformHeaders(request.headers)
   });
 
   const toWireMockResponse = (response) => ({
