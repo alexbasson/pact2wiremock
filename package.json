@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jasmine"
   },
-  "author": "",
+  "author": "Alex Basson <alexbasson@gmail.com>",
   "license": "ISC",
   "bin": {
     "pact2wiremock": "./index.js"
