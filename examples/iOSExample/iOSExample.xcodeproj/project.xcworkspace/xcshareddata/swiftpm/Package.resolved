@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PactConsumerSwift",
+        "repositoryURL": "https://github.com/DiUS/pact-consumer-swift",
+        "state": {
+          "branch": null,
+          "revision": "6ca8285ff3c2895d73d8ecf574057c07732552ac",
+          "version": "0.10.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

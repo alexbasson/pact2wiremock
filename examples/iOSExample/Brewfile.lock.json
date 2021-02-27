@@ -1,0 +1,27 @@
+{
+  "entries": {
+    "tap": {
+      "pact-foundation/pact-ruby-standalone": {
+        "revision": "88612295780c182e137177954ac6ef8cbc0c91cc"
+      }
+    },
+    "brew": {
+      "pact-ruby-standalone": {
+        "version": "1.88.39",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.0.2",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "f5d13c001802d6839f3decb5bf4a7d18d9585d75",
+        "CLT": "12.4.0.0.1.1610135815",
+        "Xcode": "12.4",
+        "macOS": "11.2.1"
+      }
+    }
+  }
+}
