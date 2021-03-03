@@ -32,11 +32,19 @@ function clean_project() {
   xcodebuild clean -project $XCODE_PROJECT_FILE | cat
 }
 
+function get_ios_simulator_id() {
+  IOS_SIMULATOR_ID=$(xcrun simctl list \
+  | grep '^[ ]*iPhone'\
+  | grep -v 'unavailable'\
+  | grep -o '[0-9A-Z]\{8\}-[0-9A-Z]\{4\}-[0-9A-Z]\{4\}-[0-9A-Z]\{4\}-[0-9A-Z]\{12\}'\
+  | tail -1)
+}
+
 function run_unit_tests() {
   xcodebuild test \
     -project $XCODE_PROJECT_FILE \
     -scheme $UNIT_TEST_SCHEME \
-    -destination 'platform=iOS Simulator,name=iPhone 12' | cat
+    -destination "platform=iOS Simulator,id=${IOS_SIMULATOR_ID}" | cat
 }
 
 function kill_wiremock_if_already_running() {
@@ -69,13 +77,14 @@ function run_ui_tests() {
   xcodebuild test \
     -project $XCODE_PROJECT_FILE \
     -scheme $UI_TEST_SCHEME \
-    -destination 'platform=iOS Simulator,name=iPhone 12' | cat
+    -destination "platform=iOS Simulator,id=${IOS_SIMULATOR_ID}" | cat
 }
 
 function main() {
   go_to_project_root_directory
   set_bash_error_handling
   install_brew_dependencies_if_necessary
+  get_ios_simulator_id
 
   clean_project
 
