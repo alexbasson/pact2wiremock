@@ -11,7 +11,6 @@
 		514C7CA825E9DFE1003AEEA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514C7CA725E9DFE1003AEEA2 /* Assets.xcassets */; };
 		514C7CAB25E9DFE1003AEEA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514C7CAA25E9DFE1003AEEA2 /* Preview Assets.xcassets */; };
 		514C7CC125E9DFE2003AEEA2 /* iOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CC025E9DFE2003AEEA2 /* iOSExampleUITests.swift */; };
-		514C7CD225E9E06A003AEEA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CD125E9E06A003AEEA2 /* ContentView.swift */; };
 		514C7CE025E9E087003AEEA2 /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CD925E9E086003AEEA2 /* IngredientListView.swift */; };
 		514C7CE125E9E087003AEEA2 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CDA25E9E087003AEEA2 /* Ingredient.swift */; };
 		514C7CE225E9E087003AEEA2 /* IngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CDB25E9E087003AEEA2 /* IngredientsViewModel.swift */; };
@@ -21,6 +20,7 @@
 		514C7CE625E9E087003AEEA2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CDF25E9E087003AEEA2 /* Config.swift */; };
 		514C7CEB25E9E098003AEEA2 /* HttpIngredientServiceClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514C7CEA25E9E098003AEEA2 /* HttpIngredientServiceClientTest.swift */; };
 		514C7CF425E9E139003AEEA2 /* PactConsumerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 514C7CF325E9E139003AEEA2 /* PactConsumerSwift */; };
+		51B62D0125EFD5EC005B569A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B62D0025EFD5EC005B569A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		514C7CBC25E9DFE2003AEEA2 /* iOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514C7CC025E9DFE2003AEEA2 /* iOSExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSExampleUITests.swift; sourceTree = "<group>"; };
 		514C7CC225E9DFE2003AEEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		514C7CD125E9E06A003AEEA2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../ContractUIExperiment/ContractUIExperiment/ContentView.swift; sourceTree = "<group>"; };
 		514C7CD925E9E086003AEEA2 /* IngredientListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
 		514C7CDA25E9E087003AEEA2 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		514C7CDB25E9E087003AEEA2 /* IngredientsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewModel.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		514C7CDE25E9E087003AEEA2 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		514C7CDF25E9E087003AEEA2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		514C7CEA25E9E098003AEEA2 /* HttpIngredientServiceClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpIngredientServiceClientTest.swift; sourceTree = "<group>"; };
+		51B62D0025EFD5EC005B569A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				514C7CDF25E9E087003AEEA2 /* Config.swift */,
-				514C7CD125E9E06A003AEEA2 /* ContentView.swift */,
+				51B62D0025EFD5EC005B569A /* ContentView.swift */,
 				514C7CDD25E9E087003AEEA2 /* CreateIngredientFormView.swift */,
 				514C7CDA25E9E087003AEEA2 /* Ingredient.swift */,
 				514C7CD925E9E086003AEEA2 /* IngredientListView.swift */,
@@ -293,7 +293,7 @@
 				514C7CE625E9E087003AEEA2 /* Config.swift in Sources */,
 				514C7CE125E9E087003AEEA2 /* Ingredient.swift in Sources */,
 				514C7CA425E9DFDF003AEEA2 /* iOSExampleApp.swift in Sources */,
-				514C7CD225E9E06A003AEEA2 /* ContentView.swift in Sources */,
+				51B62D0125EFD5EC005B569A /* ContentView.swift in Sources */,
 				514C7CE025E9E087003AEEA2 /* IngredientListView.swift in Sources */,
 				514C7CE525E9E087003AEEA2 /* PrimaryButton.swift in Sources */,
 				514C7CE425E9E087003AEEA2 /* CreateIngredientFormView.swift in Sources */,
