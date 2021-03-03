@@ -12,6 +12,7 @@
     "pact2wiremock": "./index.js"
   },
   "dependencies": {
+    "@types/uuid": "^8.3.0",
     "commander": "^7.1.0",
     "uuid": "^8.3.2"
   },

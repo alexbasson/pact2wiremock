@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "web-example"
+  },
+  "provider": {
+    "name": "ingredient-service"
+  },
+  "interactions": [
+    {
+      "description": "a request for the ingredients",
+      "providerState": "there is a list of ingredients",
+      "request": {
+        "method": "GET",
+        "path": "/ingredients",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "id": "7f337741-3504-48e2-a9c0-04f1658e8336",
+            "name": "Butter"
+          }
+        ],
+        "matchingRules": {
+          "$.body": {
+            "min": 1
+          },
+          "$.body[*].*": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
