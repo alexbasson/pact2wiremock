@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "standard && jasmine"
   },
   "author": "Alex Basson <alexbasson@gmail.com>",
   "license": "ISC",
@@ -17,6 +17,12 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "jasmine": "^3.6.4"
+    "jasmine": "^3.6.4",
+    "standard": "^16.0.3"
+  },
+  "standard": {
+    "env": [
+      "jasmine"
+    ]
   }
 }

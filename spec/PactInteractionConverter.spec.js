@@ -1,11 +1,11 @@
-const { PactInteractionConverter } = require('../src/PactInteractionConverter');
+const { PactInteractionConverter } = require('../src/PactInteractionConverter')
 
 describe('PactInteractionConverter', () => {
-  var pactInteractionConverter;
+  let pactInteractionConverter
 
   beforeEach(() => {
-    pactInteractionConverter = PactInteractionConverter();
-  });
+    pactInteractionConverter = PactInteractionConverter()
+  })
 
   describe('toWireMockStub', () => {
     describe('GET requests', () => {
@@ -26,29 +26,29 @@ describe('PactInteractionConverter', () => {
           },
           body: [
             {
-              'name': 'some name',
-              'id': 'some id'
+              name: 'some name',
+              id: 'some id'
             }
           ]
         }
-      };
+      }
 
-      let generatedStub;
+      let generatedStub
 
       beforeEach(() => {
-        generatedStub = pactInteractionConverter.toWireMockStub(interaction);
-      });
+        generatedStub = pactInteractionConverter.toWireMockStub(interaction)
+      })
 
       it('generates a request in the correct format', () => {
         expect(generatedStub.request).toEqual({
           method: 'GET',
           url: '/ingredients',
           headers: {
-            header1: {equalTo: 'value1'},
-            header2: {equalTo: 'value2'}
+            header1: { equalTo: 'value1' },
+            header2: { equalTo: 'value2' }
           }
-        });
-      });
+        })
+      })
 
       it('generates a response in the correct format', () => {
         expect(generatedStub.response).toEqual({
@@ -58,8 +58,8 @@ describe('PactInteractionConverter', () => {
             header4: 'value4'
           },
           body: '[{"name":"some name","id":"some id"}]'
-        });
-      });
-    });
-  });
-});
+        })
+      })
+    })
+  })
+})
